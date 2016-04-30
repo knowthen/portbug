@@ -16,6 +16,7 @@
 
     app.ports.check.subscribe(function(word) {
       console.log('js subscribe fired..');
+      // put some dummy data in
       // var suggestions = spellCheck(word);
       var suggestions = ["Junk", "Jump"];
       app.ports.suggestions.send(suggestions);

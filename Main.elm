@@ -25,6 +25,7 @@ type alias Model =
 
 init : (Model, Cmd Msg)
 init =
+  -- initialize a port call works, see console.log in JS
   -- (Model "" [], Cmd.none)
   (Model "" [], check "" )
 
